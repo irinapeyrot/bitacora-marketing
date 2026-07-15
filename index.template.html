@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El mapa que ya conocía — Bitácora de aprendizaje · Irina Peyrot</title>
+<meta name="description" content="Bitácora de aprendizaje de Marketing Digital: un recorrido cartográfico por el territorio del marketing, con los ojos de quien ya ejerce.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ EL TERRITORIO ============ -->
+<div id="viewport" class="viewport">
+  <div id="map-wrap" class="map-wrap">
+    <!--MAP_SVG-->
+  </div>
+  <div id="pins" class="pins"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+</div>
+
+<!-- ============ CARTUCHO ============ -->
+<header class="cartouche">
+  <div class="c-rule">
+    <span>MARKETING DIGITAL · DISEÑO GRÁFICO</span>
+    <span>BITÁCORA</span>
+  </div>
+  <h1>El mapa<br>que ya<br>conocía</h1>
+  <p class="c-sub">Volver a un territorio aprendido y descubrir que el paisaje no cambió: cambió la mirada.</p>
+  <div class="c-meta">
+    <span class="c-name">Irina Peyrot</span>
+    <span class="c-com">COMISIÓN DGN5BV · FINAL</span>
+  </div>
+  <button id="enter" class="enter">
+    <span>Recorrer el territorio</span>
+    <svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+  </button>
+</header>
+
+<!-- ============ LEYENDA ============ -->
+<nav id="legend" class="legend" aria-label="Estaciones del recorrido"></nav>
+
+<!-- ============ HUD INFERIOR ============ -->
+<div class="hud">
+  <div class="hud-left">
+    <span class="hud-l">POSICIÓN</span>
+    <span id="coords">34.90° S · 56.16° O</span>
+  </div>
+  <button id="open-hint" class="hud-station">
+    <span id="station-label">00 · PRÓLOGO</span>
+    <span class="hud-open">abrir ↵</span>
+  </button>
+  <div class="hud-help">
+    <kbd>scroll</kbd> viajar · <kbd>enter</kbd> leer · <kbd>esc</kbd> volver
+  </div>
+</div>
+<div class="progress-track"><div id="progress" class="progress"></div></div>
+
+<!-- ============ PANEL ============ -->
+<aside id="panel" class="panel" aria-live="polite">
+  <button id="panel-close" class="panel-close" aria-label="Volver al mapa">
+    <svg viewBox="0 0 24 24" width="15" height="15"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+    <span>Volver al mapa</span>
+  </button>
+  <div class="panel-inner">
+    <div id="panel-kicker" class="panel-kicker"></div>
+    <h2 id="panel-title" class="panel-title"></h2>
+    <div id="panel-body" class="panel-body"></div>
+  </div>
+</aside>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
